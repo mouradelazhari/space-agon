@@ -88,7 +88,7 @@ func createAgonesGameServerAllocation() *allocationv1.GameServerAllocation {
 	return &allocationv1.GameServerAllocation{
 		Spec: allocationv1.GameServerAllocationSpec{
 			Required: metav1.LabelSelector{
-				MatchLabels: map[string]string{agonesv1.FleetNameLabel: "dedicated"},
+				MatchLabels: map[string]string{agonesv1.FleetNameLabel: "fleet-deployment-dedicated"},
 			},
 		},
 	}
